@@ -1,0 +1,10 @@
+{
+
+	"Python": {
+		"pythonExtraPaths": [
+			"libs",
+			"~/Applications/Sublime Text 2.app/Contents/MacOS",
+			"/Applications/Sublime Text 2.app/Contents/MacOS"
+		]
+	}
+}

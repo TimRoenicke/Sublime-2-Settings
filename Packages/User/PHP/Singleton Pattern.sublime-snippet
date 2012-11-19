@@ -1,0 +1,33 @@
+<snippet>
+	<content><![CDATA[
+<?php 
+class ${1:MyClass} { 
+
+  // singleton instance 
+  private static $instance; 
+
+  // private constructor function 
+  // to prevent external instantiation 
+  private __construct() { } 
+
+  // factory method 
+  public static function factory() { 
+
+    if(!self::$instance) { 
+      self::$instance = new self(); 
+    } 
+
+    return self::$instance; 
+
+  } 
+
+  //... 
+
+} 
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>singleton</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.php</scope> -->
+</snippet>

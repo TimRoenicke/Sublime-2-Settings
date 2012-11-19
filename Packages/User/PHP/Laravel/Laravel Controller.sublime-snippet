@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?php
+
+class ${1:New}_Controller extends Base_Controller {
+
+	public function action_index()
+    {
+        \$this->layout->with('title', "${2:New Title}")->nest('content', '${3:view_folder.file_name}');
+    }
+
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>lc</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
